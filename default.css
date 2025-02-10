@@ -1,0 +1,300 @@
+/* UCC Logo */
+  #logo {
+    float: left;
+    width: 280px;
+    margin-right: 25px;
+    border-right: 2px solid white;
+  }
+
+/* UCC Timetable table */
+  table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+  }
+
+  table {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  th {
+    border: 2px solid black;
+  }
+
+/* Table headings row */
+  #title {
+    background-color: #3366cc;
+    opacity:0.6;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+  }
+
+/* 'Module Title' column */
+  #name {
+    text-align: left;
+    padding-left: 15px;
+  }
+
+/* Different background color for every second row in table */
+  #row2 {
+    background-color: #edf0ee;
+  }
+
+/* 'Module Code' hyperlinks */
+  #bookOfModules {
+    text-decoration: none;
+    color: #fa251e;
+  }
+
+/* 'Module Code' hyperlink hover color */
+  #bookOfModules:hover {
+    font-style: bold;
+    font-size: 17px;
+    color: darkred;
+    font-style: italic;
+  }
+
+/* Emphasised text class */
+  .emph {
+    font-style: italic;
+    color: GoldenRod;
+  }
+
+/* Navigation bar: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_fixed */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f5cd3d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* spanospano&nbsp; 37011 silver badge1414 bronze badges and Rohit UtekarRohit Utekar&nbsp; 83855 silver badges1010 bronze badges (1967)
+      Nav bar on top of other content CSS, Stack Overflow.
+      Available at: https://stackoverflow.com/questions/64195182/nav-bar-on-top-of-other-content-css */
+    z-index: 2; /* Place on top of heading (i.e. foreground) */
+  }
+
+  li {
+    float: left;
+    border-right: 1px solid grey;
+  }
+
+  li a {
+    display: block;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #fadc70;
+    color: black;
+    font-style: italic;
+    font-size: 18px;
+  }
+
+/* Page headings */
+  .heading {
+    position: relative;
+    left: 4em;
+    color: white;
+    background-color: #000066;
+    padding: 5px;
+    margin-top: 5px;
+  /* W3Schools online HTML editor (no date) W3Schools Online Web Tutorials.
+     Available at: https://www.w3schools.com/cssref/tryit.php?filename=trycss_scroll-margin */
+    scroll-margin-top: 50px; /* Heading below nav bar */
+  }
+
+ /* Pseudo element for empty block before Page headings */
+  /* Tsonev, K. (2013) CSS: :before and :after pseudo elements in practice, krasimirtsonev.com.
+  Available at: https://krasimirtsonev.com/blog/article/CSS-before-and-after-pseudo-elements-in-practice */
+  .heading::before {
+    content: "";
+    position: absolute;
+    top: 0; /* inline with heading */
+    left: -4em; /* go before heading */
+    width: 4em; /* block width */
+    height: 100%; /* block height */
+    background-color: #000066;
+  }
+
+  body {
+    margin-right: 100px;
+  }
+
+/* Home photo */
+  #cork {
+    width: 700px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right:  auto;
+  }
+
+/* Home description */
+  #homeSection {
+    text-align: center;
+    padding: 70px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+/* Other photo */
+  #japan {
+    width: 700px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right:  auto;
+  }
+
+/* Other description */
+  #otherSection {
+    text-align: center;
+    padding: 70px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+/* Scroll behaviour */
+  /* W3Schools online HTML editor (no date) W3Schools Tryit Editor.
+  Available at: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+/* My UCC Activites and Personal Section padding */
+  #extra {
+    padding-left: 4em;
+  }
+
+ /* Center forms */
+  form {
+    text-align: center;
+  }
+
+ /* Theme nav links */
+  .theme {
+    float: right;
+  }
+
+ /* Active theme */
+  .active {
+    background-color: #fa251e;
+    opacity: 0.75;
+  }
+
+/* Amount input box padding */
+  #amountInput {
+    text-align: center;
+    padding: 5px;
+    margin-right: 5px;
+    border: 3px solid lightgrey;
+  }
+
+ /* From / To currency labels */
+  .label {
+    color: #000066;
+    font-weight: bold;
+  }
+
+ /* Dropdown menus */
+  .dropdown {
+    width: 80px;
+    height: 30px;
+    background-color: #f5cd3d;
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+    font-family: Calibri;
+  }
+
+ /* Switch currency button */
+  #switch {
+    width: 50px;
+    height: 25px;
+    color: white;
+    background-color: #fa251e;
+    opacity: 0.8;
+/* REFERENCE
+  W3Schools (no date a) How to - round buttons, How To Create Round Buttons.
+  Available at: https://www.w3schools.com/howto/howto_css_round_buttons.asp
+*/
+  /* Round button */
+    border-radius: 12px;
+  }
+
+  #switch:hover {
+    background-color: darkred;
+    opacity: 0.8;
+  }
+
+ /* Go button */
+  #currencyButton {
+    width: 50px;
+    height: 25px;
+    background-color: #fa251e;
+    opacity: 0.8;
+    color: white;
+    border-radius: 12px;
+  }
+
+  #currencyButton:hover {
+    background-color: darkred;
+    opacity: 0.8;
+  }
+
+ /* Clear button(s) */
+  #clearButton {
+    width: 50px;
+    height: 25px;
+    background-color: #fa251e;
+    opacity: 0.8;
+    color: white;
+    border-radius: 12px;
+  }
+
+  #clearButton:hover {
+    background-color: blue;
+    opacity: 0.8;
+  }
+
+ /* Result Input Field*/
+  #result {
+    text-align: center;
+    width: 155px;
+    padding: 4px;
+    margin-left: 5px;
+    border: 3px solid lightgrey;
+  }
+
+ /* Search Inout Field */
+  #searchInput {
+    width: 500px;
+    padding: 5px;
+    border: 3px solid lightgrey;
+  }
+
+ /* Search button */
+  #searchButton {
+    width: 100px;
+    height: 25px;
+    background-color: #fa251e;
+    opacity: 0.8;
+    color: white;
+    border-radius: 12px;
+  }
+
+  #searchButton:hover {
+    background-color: darkred;
+    opacity: 0.8;
+  }

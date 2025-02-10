@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- Web page title -->
+    <title>CS6101 - Assignment 3 </title>
+    <!-- Default Theme -->
+      <link id="default-stylesheet" rel="stylesheet" href="default.css">
+    <!-- Night Theme -->
+      <link id="night-stylesheet" rel="stylesheet" href="night.css">
+    <!-- High Contrast Theme -->
+      <link id="high-contrast-stylesheet" rel="stylesheet" href="high_contrast.css">
+  </head>
+
+
+<body>
+<!-- Navigation bar -->
+  <ul>
+    <li><a href="#intro">Home</a></li>
+    <li><a href="#classTimetable">Class Timetable</a></li>
+    <li><a href="#labTimetable">Lab Timetable</a></li>
+    <li><a href="#home">Home Photo</a></li>
+    <li><a href="#other">Other Photo</a></li>
+    <li><a href="#services">Services</a></li>
+
+<!-- REFERENCE
+    Khoury, A. (2012) Change style sheet using Javascript tutorial CSS swap stylesheet, YouTube.
+    Available at: https://www.youtube.com/watch?v=_XAQH41rjio
+-->
+  <!-- Website Theme Styles -->
+    <li class="theme"><a href="#" onclick="switchStyle('default')" id="default-theme-link" class="theme-link active">Default</a></li>
+    <li class="theme"><a href="#" onclick="switchStyle('night')" id="night-theme-link" class="theme-link">Night</a></li>
+    <li class="theme"><a href="#" onclick="switchStyle('high_contrast')" id="high-contrast-theme-link" class="theme-link">High Contrast</a></li>
+   </ul>
+  <br><br>
+
+<!-- Home Section -->
+  <h2 class="heading" id="intro">Introduction</h2>
+  <!-- UCC Logo -->
+    <img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj-ChHbqvIJvvJrobsQsMSJC2hDhc3g6hcqDWKUGpX4A&s">
+
+    <div id="introduction">
+    <!-- Introduction section with some emphasised text using emph class -->
+      <p>Hello. My name is <span class="emph">Claire Marks</span>. I am a 23-year-old Business Information Systems Postgraduate
+         currently studying a Masters in <span class="emph">Interactive Media</span> in UCC. </p>
+      <p>I play hockey with the club <span class="emph">Harlequins</span> up by the Cork airport and I like to watch TV shows and cook my own dishes
+      in my spare time. </p>
+      <p>I enjoy going out with my friends and cuddling up to my dog <span class="emph">Archie</span>.</p>
+      <p>I am really enjoying my course and hope to pursue a career in <span class="emph">Web Design and Development</span> or <span class="emph">3D Animation in Gaming</span>.</p>
+    </div>
+   <br>
+
+
+  <!-- Class Timetable -->
+    <h2 class="heading" id="classTimetable">Class Timetable</h2>
+      <table>
+      <!-- Heading row -->
+        <tr id="title">
+          <th>Module Code:</th>
+          <th>Module Title:</th>
+          <th>Weekday <br /> & Time:</th>
+          <th>Room Code:</th>
+        </tr>
+
+      <!-- CS6100 -->
+        <tr>
+          <td><a id="bookOfModules" href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2023&code=CS6100">CS6100</td>
+          <td id="name">Authoring</td>
+          <td>Monday <br> <b><i>12:00 - 14:00</i></b></td>
+          <td>G.08</td>
+        </tr>
+
+      <!-- CS6101 -->
+        <tr id="row2">
+          <td><a id="bookOfModules" href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2023&code=CS6101">CS6101</td>
+          <td id="name">Web Development for Digital Media</td>
+          <td>Wednesday <br> <b><i>13:00 - 15:00</i></b></td>
+          <td>G.09</td>
+        </tr>
+
+      <!-- CS6102 -->
+        <tr>
+          <td><a id="bookOfModules" href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2023&code=CS6102">CS6102</td>
+          <td id="name">Graphics for Interactive Media</td>
+          <td>Friday <br> <b><i>13:00 - 15:00</i></b></td>
+          <td>G.13</td>
+        </tr>
+
+      <!-- CS6103 -->
+        <tr id="row2">
+          <td><a id="bookOfModules" href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2023&code=CS6103">CS6103</td>
+          <td id="name">Audio & Sound Engineering</td>
+          <td>Monday <br> <b><i>16:00 - 18:00</i></b></td>
+          <td>G.08</td>
+        </tr>
+
+      <!-- CS6104 -->
+        <tr>
+          <td><a id="bookOfModules" href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2023&code=CS6104">CS6104</td>
+          <td id="name">Digital Video Capture & Packaging</td>
+          <td>Wednesday <br> <b><i>17:00 - 19:00</i></b></td>
+          <td>G.08</td>
+        </tr>
+
+       <!--  CS6111 -->
+        <tr id="row2">
+          <td><a id="bookOfModules" href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2023&code=CS6111">CS61111</td>
+          <td id="name">3D Graphics & Modelling</td>
+          <td>Tuesday <br> <b><i>16:00 - 18:00</i></b></td>
+          <td>G.18</td>
+        </tr>
+      <!-- End of Timetable -->
+      </table>
+      <br><br>
+
+
+  <!-- Lab Timetable -->
+    <h2 class="heading" id="labTimetable">Lab Timetable</h2>
+      <table>
+      <!-- Heading row -->
+        <tr id="title">
+          <th>Module Code:</th>
+          <th>Module Title:</th>
+          <th>Weekday <br /> & Time:</th>
+          <th>Room Code:</th>
+        </tr>
+
+      <!-- CS6100 -->
+        <tr>
+          <td><a id="bookOfModules" href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2023&code=CS6100">CS6100</td>
+          <td id="name">Authoring</td>
+          <td>Wednesday <br> <b><i>16:00 - 17:00</i></b></td>
+          <td>1.15</td>
+        </tr>
+
+      <!-- CS6101 -->
+        <tr id="row2">
+          <td><a id="bookOfModules" href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2023&code=CS6101">CS6101</td>
+          <td id="name">Web Development for Digital Media</td>
+          <td>Thursday <br> <b><i>15:00 - 16:00</i></b></td>
+          <td>G.21</td>
+        </tr>
+
+      <!-- CS6102 -->
+        <tr>
+          <td><a id="bookOfModules" href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2023&code=CS6102">CS6102</td>
+          <td id="name">Graphics for Interactive Media</td>
+          <td>Friday <br> <b><i>15:00 - 16:00</i></b></td>
+          <td>1.15</td>
+        </tr>
+
+      <!-- CS6103 -->
+        <tr id="row2">
+          <td><a id="bookOfModules" href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2023&code=CS6103">CS6103</td>
+          <td id="name">Audio & Sound Engineering</td>
+          <td>Tuesday <br> <b><i>14:00 - 15:00</i></b></td>
+          <td>1.14</td>
+        </tr>
+
+      <!-- CS6104 -->
+        <tr>
+          <td><a id="bookOfModules" href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2023&code=CS6104">CS6104</td>
+          <td id="name">Digital Video Capture & Packaging</td>
+          <td>Thursday <br> <b><i>16:00 - 17:00</i></b></td>
+          <td>1.15</td>
+        </tr>
+
+       <!--  CS6111 -->
+        <tr id="row2">
+          <td><a id="bookOfModules" href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2023&code=CS6111">CS61111</td>
+          <td id="name">3D Graphics & Modelling</td>
+          <td>Monday <br> <b><i>14:00 - 15:00</i></b></td>
+          <td>1.15</td>
+        </tr>
+      <!-- End of Timetable -->
+      </table>
+      <br><br>
+
+
+    <div>
+      <!-- Home photo and description -->
+        <h2 class="heading" id="home">Home Photo</h2>
+          <img id="cork" src="https://www.tripsavvy.com/thmb/rm6kQ3GQvETDCBGCwac8yCU8Spc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/CorkCity-5b8800b8c9e77c007b1e3eb7.jpg"
+          alt="cork">
+            <div id="homeSection">
+              <p>My home is Cork City. I find it to be one of the best places in the world as it has rich
+              culture and is full of friendly people. I have lived here all my life and was born at the Bons Hospital
+            just up by where I live. I grew up here with my sister and 3 brothers and couldn't have wished for a better places
+            to grow up in. </p>
+            </div>
+      <br>
+
+
+      <!-- Other photo and description -->
+        <h2 class="heading" id="other">Other Photo</h2>
+          <img id="japan" src="https://afar.brightspotcdn.com/dims4/default/55b4d7f/2147483647/strip/true/crop/1357x720+41+0/resize/1440x764!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fcf%2F8a%2F20b4a2c544a58be93512ad67084c%2Fbohler-japankk-4006.jpg"
+          alt="japan">
+            <div id="otherSection">
+              <p>Although I have never been there before, Japan is one of my favourite countires. It is on the top of my
+              bucket list for places to visit. My favourite cuisine is Japanese food and I also love the art and nature that
+              Japan has to offer. I would love to go there someday and try the proper food and see what kind of lifestyles they offer. </p>
+            </div>
+      <br>
+
+
+  <!-- Other sections -->
+    <div id="otherSections">
+        <h2 class="heading">My UCC Activities</h2>
+          <p id="extra">Here you can find information about all my UCC modules. CS6101 is among the best! I love it!</p>
+        <br>
+
+        <h2 class="heading">Personal</h2>
+          <p id="extra">Here you can find personal information about me. Only things which are safe to reveal online!</p>
+        <br>
+
+
+  <!-- Services Section -->
+      <h2 class="heading" id="services">Services</h2>
+
+      <!-- Currency Converter Form: Look up currency exchange rate -->
+        <form id="currencyExchangeRate">
+          <h3><u>Currency Information</u></h3>
+            <input type="number" name="Amount" id="amountInput" placeholder="Amount" onkeypress="return onlyNumberKey(event)" maxLength="10" required>
+              <label class="label">From:</label>
+                <select name="From" id="fromCurrency" class="dropdown">
+                  <!-- Currency Options -->
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="AUD">AUD</option>
+                    <option value="JPY">JPY</option>
+                </select>
+          <!-- Switch currencies button -->
+            <input type="button" name="switch" id="switch" value="<->" onclick="switchCurrency()">
+              <label class="label">To:</label>
+                <select name="To" id="toCurrency" class="dropdown">
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="AUD">AUD</option>
+                    <option value="JPY">JPY</option>
+                </select>
+          <!-- Currency Form buttons -->
+            <input type="button" value="Go" id="currencyButton" onclick="currencyConverter()">
+            <input type="button" value="Clear" id="clearButton" onclick="clearField()">
+
+          <!-- Display results -->
+             <input type="text" id="result" placeholder="Result" maxLength="10" readonly>
+        </form>
+        <br><br>
+
+
+      <!-- Search Form: Ask a question -->
+        <form id="searchForm" action="https://duckduckgo.com/" method="GET" target="_blank" onsubmit="searchQuestion(event)">
+          <h3><u>Search Form</u></h3>
+            <input type="search" name="Question" id="searchInput" placeholder="Search" maxLength="65" required>
+          <br><br>
+
+        <!-- Safe Search option -->
+          <label class="label">Safe Search:</label>
+            <select name="kp" id="searchOption" class="dropdown">
+              <option value="1">On</option>
+              <option value="-1">Moderate</option>
+            </select>
+
+        <!-- Color Theme options -->
+          <label class="label">Color Theme:</label>
+            <select name="theme" id="colorTheme" class="dropdown">
+              <option value="-1">Default</option>
+              <option value="c">Contrast</option>
+              <option value="r">Retro</option>
+              <option value="d">Dark</option>
+              <option value="t">Terminal</option>
+            </select>
+
+        <!-- Font Size dropdowns -->
+          <label class="label">Font Size:</label>
+            <select name="size" id="fontSize" class="dropdown">
+              <option value="n">Default</option>
+              <option value="l">Larger</option>
+              <option value="t">Largest</option>
+              <option value="m">Medium</option>
+              <option value="s">Small</option>
+            </select>
+            <br><br>
+        <!-- Search Form buttons -->
+          <input type="submit" value="Search" id="searchButton" onclick="searchQuestion()">
+          <input type="button" value="Clear" id="clearButton" onclick="clearField()">
+        </form>
+      <br>
+    </div>
+
+
+  <!-- JavaScript Functions -->
+    <script>
+    // Function to set the default style
+      function setDefaultStyle() {
+      // Get the theme links
+        var defaultStylesheet = document.getElementById('default-stylesheet');
+        var nightStylesheet = document.getElementById('night-stylesheet');
+        var highContrastStylesheet = document.getElementById('high-contrast-stylesheet');
+
+      // Enable the default style and disable the others
+        defaultStylesheet.disabled = false;
+        nightStylesheet.disabled = true;
+        highContrastStylesheet.disabled = true;
+
+      // Add 'active' class to the default theme link when window first opens
+        document.getElementById('default-theme-link').classList.add('active');
+      }
+
+      // Call the setDefaultStyle function when window first opens
+        window.onload = setDefaultStyle;
+
+    // Switching between different themes function
+      function switchStyle(styleName) {
+      // Remove the 'active' class from other theme links
+        document.querySelectorAll('.theme-link').forEach(link => link.classList.remove('active'));
+
+      // Get the link elements
+        var defaultStylesheet = document.getElementById('default-stylesheet');
+        var nightStylesheet = document.getElementById('night-stylesheet');
+        var highContrastStylesheet = document.getElementById('high-contrast-stylesheet');
+
+      // Disable all stylesheets
+        defaultStylesheet.disabled = true;
+        nightStylesheet.disabled = true;
+        highContrastStylesheet.disabled = true;
+
+      // Enable the selected stylesheet theme once clicked on
+        switch (styleName) {
+        // Night theme selected
+          case 'night':
+            nightStylesheet.disabled = false;
+            document.getElementById('night-theme-link').classList.add('active');
+            alert("Switching to Night theme")
+            break;
+        // High Contrast selected
+          case 'high_contrast':
+            highContrastStylesheet.disabled = false;
+            document.getElementById('high-contrast-theme-link').classList.add('active');
+            alert("Switching to High Contrast theme")
+            break;
+        // Default style
+          default:
+            defaultStylesheet.disabled = false;
+            alert("Switching to Default theme")
+            document.getElementById('default-theme-link').classList.add('active');
+        }
+      }
+
+
+    // Global variable for exchange rates (rounded up)
+      var exchangeRates = {
+        // US Dollar
+          USD: {
+              EUR: 0.85,
+              GBP: 0.75,
+              AUD: 1.52,
+              JPY: 149.45
+          },
+        // Euro
+          EUR: {
+              USD: 1.18,
+              GBP: 0.88,
+              AUD: 1.66,
+              JPY: 163.51
+          },
+        // British Pound
+          GBP: {
+              USD: 1.33,
+              EUR: 1.14,
+              AUD: 1.91,
+              JPY: 188.37
+          },
+        // Australian Dollar
+          AUD: {
+              USD: 0.66,
+              EUR: 0.60,
+              GBP: 0.52,
+              JPY: 98.41
+          },
+        // Japanese Yen
+          JPY: {
+              USD: 0.007,
+              EUR: 0.006,
+              GBP: 0.005,
+              AUD: 0.01
+          }
+      };
+
+   // Currency Converter function
+      function currencyConverter() {
+        var amount = document.getElementById("amountInput").value;
+        var fromCurrency = document.getElementById("fromCurrency").value;
+        var toCurrency = document.getElementById("toCurrency").value;
+
+      // Get the chosen exchange rates
+        var exchangeRate = exchangeRates[fromCurrency][toCurrency];
+
+      // Result equation
+        var result = amount * exchangeRate;
+
+      // Display the Result in the result textfield
+        document.getElementById("result").value = result + " " + toCurrency;
+      }
+
+    // Switch currencies function
+      function switchCurrency() {
+        var fromCurrency = document.getElementById("fromCurrency").value;
+        var toCurrency = document.getElementById("toCurrency").value;
+
+      // Swap From and To values
+        document.getElementById("fromCurrency").value = toCurrency;
+        document.getElementById("toCurrency").value = fromCurrency;
+
+      // Recalculate the result with the currencyConverter function
+        currencyConverter();
+    }
+
+
+    // Search Form function
+      function searchQuestion(event) {
+    /* REFERENCE
+        MozDevNet (2023) Event: PreventDefault() method - web apis: MDN, MDN Web Docs.
+        Available at: https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
+    */
+      // Prevent DuckDuckGo's default window from opening
+        event.preventDefault();
+
+        var question = document.getElementById("searchInput").value;
+        var safeSearchOption = document.getElementById("searchOption").value;
+        var colorOption = document.getElementById("colorTheme").value;
+        var sizeOption = document.getElementById("fontSize").value;
+
+      // Safe Search value
+        var safeSearch = mapSafeSearch(safeSearchOption);
+
+      // Font size value
+        var size = mapSize(sizeOption);
+
+      // Color Theme value
+        var theme = mapTheme(colorOption);
+
+    /* REFERENCE
+        DuckDuckGo (2023) How to use URL parameters to change your duckduckgo search settings, DuckDuckGo Help Pages.
+        Available at: https://duckduckgo.com/duckduckgo-help-pages/settings/params/
+    */
+      // DuckDuckGo URL with chosen parameter values
+        var duckDuckGoUrl = 'https://duckduckgo.com/?q=' + question + '&kp=' + safeSearch + '&kae=' + theme + '&ks=' + size;
+
+      // Open the search results in a new window
+        window.open(duckDuckGoUrl, "_blank");
+    }
+
+
+  /* REFERENCE
+    W3Schools (no date) The JavaScript Switch Statement, JavaScript Switch statement.
+    Available at: https://www.w3schools.com/js/js_switch.asp
+  */
+    // Function to map Safe Search option to corresponding kp parameter value
+      function mapSafeSearch(option) {
+        switch (option) {
+          case '1':
+              return '1'; // On
+          case '-1':
+              return '-1'; // Moderate
+          default:
+              return '1'; // Default if no option is chosen
+        }
+      }
+
+    // Function to map Color Theme option to corresponding kae parameter value
+      function mapTheme(option) {
+        switch (option) {
+          case '-1':
+            return '-1'; // Default
+          case 'c':
+            return 'c'; // Contrast
+          case 'r':
+            return 'r'; // Retro
+          case 'd':
+            return 'd'; // Dark
+          case 't':
+            return 't'; // Terminal
+          default:
+            return 'n'; // Default if no option is chosen
+        }
+      }
+
+    // Function to map Size option to corresponding ks parameter value
+      function mapSize(option) {
+        switch (option) {
+          case 'n':
+            return 'n'; // Default
+          case 'l':
+            return 'l'; // Larger
+          case 't':
+            return 't'; // Largest
+          case 'm':
+            return 'm'; // Medium
+          case 's':
+            return 's'; // Small
+          default:
+            return 'n'; // Default if no option is chosen
+        }
+      }
+
+
+   // Clear function to clear textfields after button is clicked
+      function clearField() {
+        // Clear Amount textfield
+          document.getElementById("amountInput").value = "";
+        // Clear Search textfield
+          document.getElementById("searchInput").value = "";
+        // Clear Result textfield
+          document.getElementById("result").value = "";
+      }
+
+
+  /* REFERENCE
+    Kannan3, V. (2023) How to force input field to enter numbers only using JavaScript ?, GeeksforGeeks.
+    Available at: https://www.geeksforgeeks.org/how-to-force-input-field-to-enter-numbers-only-using-javascript/
+  */
+    // Only allow numbers to be entered into Amount input box
+      function onlyNumberKey(evt) {
+              var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+              if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+                  return false;
+              return true;
+          }
+
+
+  /* REFERENCE
+    Mr. Web Designer (2022) Maxlength attribute not working for input type = number in HTML? here's the Javascript solution!, YouTube. YouTube.
+    Available at: https://www.youtube.com/watch?v=DDUdZNCuwtU
+  */
+    // Implement maxLength within Amount input box
+        document.querySelectorAll('input[type=number]').forEach(input =>{
+                input.oninput = () =>{
+                    if(input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength);
+                };
+            });
+    </script>
+</body>
+
+</html>
